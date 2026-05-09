@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f0f0f;
+  color: white;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section.dark {
+  background: #181818;
+}
+
+.skills span {
+  background: #222;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+}
