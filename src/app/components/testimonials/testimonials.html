@@ -1,0 +1,129 @@
+<section id="testimonials" class="relative px-4 sm:px-6 lg:px-16 pt-15 sm:pt-20 lg:pt-10 pb-20 sm:pb-15 text-white overflow-hidden">
+
+  <!-- BACKGROUND -->
+  <div class="absolute top-[-120px] left-[-120px] w-[450px] h-[450px]  rounded-full"></div>
+  <div class="absolute bottom-[-120px] right-[-120px] w-[500px] h-[500px]  rounded-full"></div>
+
+  <div class="max-w-7xl mx-auto relative">
+
+    <!-- HEADER -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-semibold">Testimonials</h2>
+      <p class="text-zinc-400 mt-3">What clients say about my work</p>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="overflow-hidden relative">
+
+      <div id="track" class="flex transition-transform duration-700 ease-in-out">
+
+        <!-- CARD -->
+        <div class="card">
+          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
+            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/women/44.jpg">
+            <p class="text-zinc-300 mb-4">Amazing experience working together.</p>
+            <p class="font-semibold">Sarah Ahmed</p>
+            <p class="text-sm text-zinc-400">UI Designer</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
+            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/men/32.jpg">
+            <p class="text-zinc-300 mb-4">Very professional developer.</p>
+            <p class="font-semibold">John Miller</p>
+            <p class="text-sm text-zinc-400">Founder</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
+            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/women/68.jpg">
+            <p class="text-zinc-300 mb-4">Shopify store sales increased.</p>
+            <p class="font-semibold">Ayesha Khan</p>
+            <p class="text-sm text-zinc-400">Owner</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
+            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/men/76.jpg">
+            <p class="text-zinc-300 mb-4">Excellent Angular skills.</p>
+            <p class="font-semibold">David Brown</p>
+            <p class="text-sm text-zinc-400">Tech Lead</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD RESPONSIVE WIDTH -->
+  <style>
+    .card {
+      flex: 0 0 100%;
+      padding: 0 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .card { flex: 0 0 50%; }
+    }
+
+    @media (min-width: 768px) {
+      .card { flex: 0 0 33.333%; }
+    }
+
+    @media (min-width: 1024px) {
+      .card { flex: 0 0 25%; }
+    }
+  </style>
+
+  <!-- JS SLIDER -->
+  <script>
+    const track = document.getElementById("track");
+    const cards = document.querySelectorAll(".card");
+
+    let index = 0;
+
+    function getVisible() {
+      if (window.innerWidth >= 1024) return 4;
+      if (window.innerWidth >= 768) return 3;
+      if (window.innerWidth >= 640) return 2;
+      return 1;
+    }
+
+    function moveSlider() {
+      const percent = 100 / getVisible();
+      track.style.transform = `translateX(-${index * percent}%)`;
+    }
+
+    function next() {
+      const max = cards.length - getVisible();
+      index = (index >= max) ? 0 : index + 1;
+      moveSlider();
+    }
+
+    setInterval(next, 4000);
+
+    // SWIPE
+    let startX = 0;
+
+    track.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    });
+
+    track.addEventListener("touchend", e => {
+      let endX = e.changedTouches[0].clientX;
+
+      if (startX - endX > 50) index++;
+      if (endX - startX > 50) index--;
+
+      if (index < 0) index = 0;
+
+      moveSlider();
+    });
+
+    window.addEventListener("resize", moveSlider);
+  </script>
+
+</section>

@@ -4,6 +4,7 @@ import { HeroComponent } from './components/hero/hero';
 import { AboutComponent } from './components/about/about';
 import { ProjectsComponent } from './components/projects/projects';
 import { SkillsComponent } from './components/skills/skills';
+import { TestimonialsComponent } from './components/testimonials/testimonials';
 import { ContactComponent } from './components/contact/contact';
 import { FooterComponent } from './components/footer/footer';
 
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/footer/footer';
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
+    TestimonialsComponent,
     ContactComponent,
     FooterComponent
   ],
