@@ -1,129 +1,159 @@
-<section id="testimonials" class="relative px-4 sm:px-6 lg:px-16 pt-15 sm:pt-20 lg:pt-10 pb-20 sm:pb-15 text-white overflow-hidden">
+<section
+  id="testimonials"
+  class="bg-black text-white py-24 px-6 lg:px-16"
+>
 
-  <!-- BACKGROUND -->
-  <div class="absolute top-[-120px] left-[-120px] w-[450px] h-[450px]  rounded-full"></div>
-  <div class="absolute bottom-[-120px] right-[-120px] w-[500px] h-[500px]  rounded-full"></div>
-
-  <div class="max-w-7xl mx-auto relative">
+  <div class="max-w-7xl mx-auto">
 
     <!-- HEADER -->
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-semibold">Testimonials</h2>
-      <p class="text-zinc-400 mt-3">What clients say about my work</p>
+
+      <p class="text-xs tracking-[4px] text-zinc-500 uppercase">
+        Testimonials
+      </p>
+
+      <h2 class="mt-4 text-4xl md:text-5xl font-semibold">
+        What clients
+        <span class="text-zinc-300">
+          say
+        </span>
+      </h2>
+
+      <p class="mt-6 text-zinc-400 max-w-xl mx-auto">
+        Feedback from people I’ve worked with on real projects.
+      </p>
+
     </div>
 
-    <!-- SLIDER -->
+    <!-- MARQUEE WRAPPER -->
     <div class="overflow-hidden relative">
 
-      <div id="track" class="flex transition-transform duration-700 ease-in-out">
+      <!-- TRACK -->
+      <div class="flex w-max gap-6 animate-scroll">
 
-        <!-- CARD -->
-        <div class="card">
-          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
-            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/women/44.jpg">
-            <p class="text-zinc-300 mb-4">Amazing experience working together.</p>
-            <p class="font-semibold">Sarah Ahmed</p>
-            <p class="text-sm text-zinc-400">UI Designer</p>
+        <!-- CARD 1 -->
+        <div class="min-w-[320px] max-w-[320px] border border-zinc-800 rounded-2xl p-6 bg-zinc-950">
+
+          <p class="text-zinc-400 text-sm leading-6">
+            “Very professional and clean work. Delivered everything on time and communication was smooth.”
+          </p>
+
+          <div class="flex items-center gap-3 mt-6">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+
+            <div>
+              <h4 class="text-sm font-semibold">Sarah Ahmed</h4>
+              <p class="text-xs text-zinc-500">UI Designer</p>
+            </div>
           </div>
+
         </div>
 
-        <div class="card">
-          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
-            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/men/32.jpg">
-            <p class="text-zinc-300 mb-4">Very professional developer.</p>
-            <p class="font-semibold">John Miller</p>
-            <p class="text-sm text-zinc-400">Founder</p>
+        <!-- CARD 2 -->
+        <div class="min-w-[320px] max-w-[320px] border border-zinc-800 rounded-2xl p-6 bg-zinc-950">
+
+          <p class="text-zinc-400 text-sm leading-6">
+            “Great understanding of requirements. The final product was exactly what we needed.”
+          </p>
+
+          <div class="flex items-center gap-3 mt-6">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+
+            <div>
+              <h4 class="text-sm font-semibold">John Miller</h4>
+              <p class="text-xs text-zinc-500">Founder</p>
+            </div>
           </div>
+
         </div>
 
-        <div class="card">
-          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
-            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/women/68.jpg">
-            <p class="text-zinc-300 mb-4">Shopify store sales increased.</p>
-            <p class="font-semibold">Ayesha Khan</p>
-            <p class="text-sm text-zinc-400">Owner</p>
+        <!-- CARD 3 -->
+        <div class="min-w-[320px] max-w-[320px] border border-zinc-800 rounded-2xl p-6 bg-zinc-950">
+
+          <p class="text-zinc-400 text-sm leading-6">
+            “Our Shopify store looks premium now. Sales improved after redesign.”
+          </p>
+
+          <div class="flex items-center gap-3 mt-6">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+
+            <div>
+              <h4 class="text-sm font-semibold">Ayesha Khan</h4>
+              <p class="text-xs text-zinc-500">Store Owner</p>
+            </div>
           </div>
+
         </div>
 
-        <div class="card">
-          <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl">
-            <img class="w-12 h-12 rounded-full mb-4" src="https://randomuser.me/api/portraits/men/76.jpg">
-            <p class="text-zinc-300 mb-4">Excellent Angular skills.</p>
-            <p class="font-semibold">David Brown</p>
-            <p class="text-sm text-zinc-400">Tech Lead</p>
+        <!-- CARD 4 -->
+        <div class="min-w-[320px] max-w-[320px] border border-zinc-800 rounded-2xl p-6 bg-zinc-950">
+
+          <p class="text-zinc-400 text-sm leading-6">
+            “Strong Angular skills and clean code structure. Easy to collaborate with.”
+          </p>
+
+          <div class="flex items-center gap-3 mt-6">
+            <img
+              src="https://randomuser.me/api/portraits/men/76.jpg"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+
+            <div>
+              <h4 class="text-sm font-semibold">David Brown</h4>
+              <p class="text-xs text-zinc-500">Tech Lead</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DUPLICATES (IMPORTANT for smooth infinite loop) -->
+
+        <div class="min-w-[320px] max-w-[320px] border border-zinc-800 rounded-2xl p-6 bg-zinc-950">
+          <p class="text-zinc-400 text-sm leading-6">
+            “Very professional and clean work. Delivered everything on time and communication was smooth.”
+          </p>
+          <div class="flex items-center gap-3 mt-6">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full">
+            <div>
+              <h4 class="text-sm font-semibold">Sarah Ahmed</h4>
+              <p class="text-xs text-zinc-500">UI Designer</p>
+            </div>
           </div>
         </div>
 
       </div>
+
     </div>
+
   </div>
 
-  <!-- CARD RESPONSIVE WIDTH -->
+  <!-- ANIMATION -->
   <style>
-    .card {
-      flex: 0 0 100%;
-      padding: 0 1rem;
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
     }
 
-    @media (min-width: 640px) {
-      .card { flex: 0 0 50%; }
+    .animate-scroll {
+      animation: scroll 18s linear infinite;
     }
 
-    @media (min-width: 768px) {
-      .card { flex: 0 0 33.333%; }
-    }
-
-    @media (min-width: 1024px) {
-      .card { flex: 0 0 25%; }
+    .animate-scroll:hover {
+      animation-play-state: paused;
     }
   </style>
-
-  <!-- JS SLIDER -->
-  <script>
-    const track = document.getElementById("track");
-    const cards = document.querySelectorAll(".card");
-
-    let index = 0;
-
-    function getVisible() {
-      if (window.innerWidth >= 1024) return 4;
-      if (window.innerWidth >= 768) return 3;
-      if (window.innerWidth >= 640) return 2;
-      return 1;
-    }
-
-    function moveSlider() {
-      const percent = 100 / getVisible();
-      track.style.transform = `translateX(-${index * percent}%)`;
-    }
-
-    function next() {
-      const max = cards.length - getVisible();
-      index = (index >= max) ? 0 : index + 1;
-      moveSlider();
-    }
-
-    setInterval(next, 4000);
-
-    // SWIPE
-    let startX = 0;
-
-    track.addEventListener("touchstart", e => {
-      startX = e.touches[0].clientX;
-    });
-
-    track.addEventListener("touchend", e => {
-      let endX = e.changedTouches[0].clientX;
-
-      if (startX - endX > 50) index++;
-      if (endX - startX > 50) index--;
-
-      if (index < 0) index = 0;
-
-      moveSlider();
-    });
-
-    window.addEventListener("resize", moveSlider);
-  </script>
 
 </section>

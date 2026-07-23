@@ -1,7 +1,6 @@
-<footer class="relative pt-24 pb-10 px-6 lg:px-16 text-white border-t border-white/10 bg-[linear-gradient(to_bottom,rgba(24,24,27,0.95),rgba(0,0,0,1))] backdrop-blur-xl overflow-hidden">
-
-  <!-- TOP GLOW LINE -->
-  <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500/40 to-transparent"></div>
+<footer
+  class="relative bg-black text-white border-t border-zinc-900 pt-20 pb-10 px-6 lg:px-16 overflow-hidden"
+>
 
   <!-- SOFT BACKGROUND GLOW -->
   <div class="absolute -top-32 left-0 w-[400px] h-[400px] bg-purple-500/10 blur-[120px] rounded-full"></div>
@@ -10,44 +9,56 @@
   <div class="relative max-w-7xl mx-auto">
 
     <!-- GRID -->
-    <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-12 pb-16 border-b border-white/10">
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-10 pb-12">
 
       <!-- BRAND -->
       <div>
 
-        <h2 class="text-3xl font-semibold tracking-wide mb-5">
+        <h2 class="text-2xl font-semibold tracking-tight">
           Sobia Dev
         </h2>
 
-        <p class="text-zinc-400 leading-8 text-sm">
-          Full Stack Developer focused on building modern, scalable and premium digital experiences using Angular, Shopify & modern web technologies.
+        <p class="mt-5 text-sm text-zinc-400 leading-7">
+          Full Stack Developer focused on building clean,
+          scalable and modern web applications using Angular,
+          React, and Shopify.
         </p>
 
-        <!-- SOCIAL -->
-        <div class="flex gap-4 mt-8">
+        <!-- SOCIAL ICONS -->
+        <div class="flex gap-3 mt-6">
 
-          <!-- GitHub -->
-          <a href="https://github.com/sobiahub"
-             target="_blank"
-             class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-purple-500/40 hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:scale-110 transition-all duration-300 group">
-
-            <svg class="w-5 h-5 text-zinc-300 group-hover:text-white transition"
-                 fill="currentColor"
-                 viewBox="0 0 24 24">
+          <!-- GITHUB -->
+          <a href="https://github.com/sobiahub" target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-900 transition">
+            <svg class="w-5 h-5 text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 2.1 3.6 1.4.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.7.9 1.2 2 1.2 3.3 0 4.5-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.3 5.6 18.3.5 12 .5z"/>
+            </svg>
+          </a>
+
+          <!-- LINKEDIN -->
+          <a href="https://www.linkedin.com/in/sobia-mushtaq-9aa813409/" target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-900 transition">
+            <svg class="w-5 h-5 text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V9h3v10zM6.5 7.7c-1 0-1.7-.8-1.7-1.7S5.5 4.3 6.5 4.3s1.7.8 1.7 1.7-.7 1.7-1.7 1.7zM19 19h-3v-5.4c0-1.3-.5-2.2-1.6-2.2-.8 0-1.3.5-1.6 1v6.6H10V9h3v1.4c.5-.7 1.4-1.4 2.8-1.4 2 0 3.2 1.3 3.2 4.1V19z"/>
+            </svg>
+          </a>
+
+          <!-- INSTAGRAM -->
+          <a href="https://www.instagram.com/thedevspark/" target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 hover:border-pink-500 hover:bg-zinc-900 transition group">
+
+            <svg class="w-5 h-5 text-zinc-400 group-hover:text-pink-400 transition" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zM12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5z"/>
             </svg>
 
           </a>
 
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/sobia-mushtaq-9aa813409/"
-             target="_blank"
-             class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/40 hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 hover:scale-110 transition-all duration-300 group">
+          <!-- YOUTUBE -->
+          <a href="https://www.youtube.com/@thedevspark" target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 hover:border-red-500 hover:bg-zinc-900 transition group">
 
-            <svg class="w-5 h-5 text-zinc-300 group-hover:text-white transition"
-                 fill="currentColor"
-                 viewBox="0 0 24 24">
-              <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V9h3v10zM6.5 7.7c-1 0-1.7-.8-1.7-1.7S5.5 4.3 6.5 4.3s1.7.8 1.7 1.7-.7 1.7-1.7 1.7zM19 19h-3v-5.4c0-1.3-.5-2.2-1.6-2.2-.8 0-1.3.5-1.6 1v6.6H10V9h3v1.4c.5-.7 1.4-1.4 2.8-1.4 2 0 3.2 1.3 3.2 4.1V19z"/>
+            <svg class="w-5 h-5 text-zinc-400 group-hover:text-red-400 transition" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.5 6.2s-.2-1.7-.9-2.5c-.9-1-2-1-2.5-1.1C16.4 2.2 12 2.2 12 2.2h-.1s-4.4 0-8.1.4c-.5 0-1.6.1-2.5 1.1-.7.8-.9 2.5-.9 2.5S0 8.2 0 10.2v1.6c0 2 .2 4 .2 4s.2 1.7.9 2.5c.9 1 2.2 1 2.8 1.1 2 .2 8.1.4 8.1.4s4.4 0 8.1-.4c.5 0 1.6-.1 2.5-1.1.7-.8.9-2.5.9-2.5s.2-2 .2-4v-1.6c0-2-.2-4-.2-4zM9.8 14.8V7.9l6.4 3.5-6.4 3.4z"/>
             </svg>
 
           </a>
@@ -56,11 +67,13 @@
 
       </div>
 
-      <!-- QUICK LINKS -->
+      <!-- LINKS -->
       <div>
-        <h3 class="text-lg font-semibold mb-5">Quick Links</h3>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-zinc-500 mb-5">
+          Navigation
+        </h3>
 
-        <ul class="space-y-4 text-zinc-400 text-sm">
+        <ul class="space-y-3 text-sm text-zinc-400">
           <li><a href="#home" class="hover:text-white transition">Home</a></li>
           <li><a href="#about" class="hover:text-white transition">About</a></li>
           <li><a href="#projects" class="hover:text-white transition">Projects</a></li>
@@ -71,39 +84,37 @@
 
       <!-- SERVICES -->
       <div>
-        <h3 class="text-lg font-semibold mb-5">Services</h3>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-zinc-500 mb-5">
+          Services
+        </h3>
 
-        <ul class="space-y-4 text-zinc-400 text-sm">
+        <ul class="space-y-3 text-sm text-zinc-400">
           <li>Web Development</li>
-          <li>Angular Applications</li>
-          <li>Shopify Development</li>
-          <li>UI/UX Design</li>
+          <li>Frontend Engineering</li>
+          <li>Shopify Stores</li>
+          <li>UI Development</li>
         </ul>
       </div>
 
       <!-- CONTACT -->
       <div>
-        <h3 class="text-lg font-semibold mb-5">Contact</h3>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-zinc-500 mb-5">
+          Contact
+        </h3>
 
-        <ul class="space-y-4 text-zinc-400 text-sm leading-7">
-          <li>📍 Rahim Yar Khan, Punjab, Pakistan</li>
-          <li>📧 sobiamushtaq033&#64;gmail.com</li>
-          <li>📞 +92 325 0048008</li>
+        <ul class="space-y-3 text-sm text-zinc-400 leading-6">
+          <li>Pakistan</li>
+          <li>sobiamushtaq033@gmail.com</li>
         </ul>
       </div>
 
     </div>
 
     <!-- BOTTOM -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 text-sm text-zinc-500">
+    <div class="border-t border-zinc-900 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
 
-      <p>
-        © 2026 Sobia Dev. All rights reserved.
-      </p>
-
-      <p>
-        Designed & Developed with ❤️ by Sobia
-      </p>
+      <p>© 2026 Sobia Dev. All rights reserved.</p>
+      <p>Built with Angular & Tailwind CSS</p>
 
     </div>
 
