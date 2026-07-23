@@ -1,143 +1,125 @@
-<nav class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-900">
-
-  <div class="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
-
-    <!-- LOGO -->
-    <a href="#home"
-      class="text-lg md:text-xl font-semibold tracking-tight text-white">
-
-      Sobia<span class="text-zinc-500">.</span>
-
+<nav
+  class="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-[#09090B]/80 backdrop-blur-xl"
+>
+  <div
+    class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10"
+  >
+    <!-- Logo -->
+    <a
+      href="#home"
+      class="text-xl font-bold tracking-tight text-white transition hover:opacity-80"
+    >
+      sobia<span class="text-blue-500">.</span>
     </a>
 
-    <!-- DESKTOP MENU -->
-    <ul class="hidden lg:flex items-center gap-8 text-sm font-medium">
-
+    <!-- Desktop Navigation -->
+    <ul
+      class="hidden items-center gap-10 text-sm font-medium text-zinc-400 lg:flex"
+    >
       <li>
-        <a href="#about"
-          class="text-zinc-400 hover:text-white transition-colors duration-200">
+        <a
+          href="#about"
+          class="transition duration-200 hover:text-white"
+        >
           About
         </a>
       </li>
 
       <li>
-        <a href="#skills"
-          class="text-zinc-400 hover:text-white transition-colors duration-200">
-          Skills
+        <a
+          href="#experience"
+          class="transition duration-200 hover:text-white"
+        >
+          Experience
         </a>
       </li>
 
       <li>
-        <a href="#projects"
-          class="text-zinc-400 hover:text-white transition-colors duration-200">
+        <a
+          href="#projects"
+          class="transition duration-200 hover:text-white"
+        >
           Projects
         </a>
       </li>
 
       <li>
-        <a href="#contact"
-          class="text-zinc-400 hover:text-white transition-colors duration-200">
+        <a
+          href="#contact"
+          class="transition duration-200 hover:text-white"
+        >
           Contact
         </a>
       </li>
-
     </ul>
 
-    <!-- RIGHT -->
-    <div class="flex items-center gap-3">
+    <!-- Right Side -->
+    <div class="flex items-center gap-4">
 
-      <!-- SOCIALS -->
-      <div class="hidden md:flex items-center gap-2">
+      <a
+  href="assets/resume/Sobia-Mushtaq-Resume.pdf"
+  target="_blank"
+  download
+  class="hidden rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-zinc-200 md:inline-flex"
+>
+  Resume
+</a>
 
-        <!-- GitHub -->
-        <a href="https://github.com/sobiahub"
-          target="_blank"
-          class="w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-700 transition">
-
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 2.1 3.6 1.4.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.7.9 1.2 2 1.2 3.3 0 4.5-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.3 5.6 18.3.5 12 .5z"/>
-          </svg>
-
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/sobia-mushtaq-9aa813409"
-          target="_blank"
-          class="w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-700 transition">
-
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V9h3v10zM6.5 7.7c-1 0-1.7-.8-1.7-1.7S5.5 4.3 6.5 4.3s1.7.8 1.7 1.7-.7 1.7-1.7 1.7zM19 19h-3v-5.4c0-1.3-.5-2.2-1.6-2.2-.8 0-1.3.5-1.6 1v6.6H10V9h3v1.4c.5-.7 1.4-1.4 2.8-1.4 2 0 3.2 1.3 3.2 4.1V19z"/>
-          </svg>
-
-        </a>
-
-      </div>
-
-      <!-- CTA -->
-      <button
-        onclick="document.getElementById('contact').scrollIntoView({ behavior:'smooth' })"
-        class="hidden md:flex items-center justify-center px-4 py-2 rounded-lg bg-white text-black text-sm font-medium hover:bg-zinc-200 transition">
-
-        Let's Talk
-
-      </button>
-
-      <!-- MOBILE BUTTON -->
+      <!-- Mobile Button -->
       <button
         onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
-        class="lg:hidden w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-300">
-
-        <svg xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5"
+        class="flex h-10 w-10 items-center justify-center rounded-lg text-zinc-300 transition hover:bg-white/5 lg:hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor">
-
-          <path stroke-linecap="round"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-
+            d="M4 7h16M4 12h16M4 17h16"
+          />
         </svg>
-
       </button>
 
     </div>
-
   </div>
 
-  <!-- MOBILE MENU -->
-  <div id="mobileMenu"
-    class="hidden lg:hidden border-t border-zinc-900 bg-black">
+  <!-- Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="hidden border-t border-white/5 bg-[#09090B] lg:hidden"
+  >
+    <div class="flex flex-col px-6 py-6">
 
-    <div class="px-6 py-5 flex flex-col gap-5">
-
-      <a href="#about" class="text-zinc-400 hover:text-white transition">
+      <a href="#about" class="py-3 text-zinc-400 hover:text-white">
         About
       </a>
 
-      <a href="#skills" class="text-zinc-400 hover:text-white transition">
-        Skills
+      <a href="#experience" class="py-3 text-zinc-400 hover:text-white">
+        Experience
       </a>
 
-      <a href="#projects" class="text-zinc-400 hover:text-white transition">
+      <a href="#projects" class="py-3 text-zinc-400 hover:text-white">
         Projects
       </a>
 
-      <a href="#contact" class="text-zinc-400 hover:text-white transition">
+      <a href="#contact" class="py-3 text-zinc-400 hover:text-white">
         Contact
       </a>
 
-      <button
-        onclick="document.getElementById('contact').scrollIntoView({ behavior:'smooth' })"
-        class="mt-2 w-full py-3 rounded-lg bg-white text-black text-sm font-medium">
-
-        Let's Talk
-
-      </button>
+      <a
+        href="assets/resume/Sobia Mushtaq _ Frontend Developer.pdf"
+        target="_blank"
+        class="mt-5 rounded-xl bg-white py-3 text-center font-semibold text-black"
+      >
+        Download Resume
+      </a>
 
     </div>
-
   </div>
-
 </nav>
