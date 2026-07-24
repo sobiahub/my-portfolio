@@ -7,6 +7,7 @@ import { SkillsComponent } from './components/skills/skills';
 import { ExperienceComponent } from './components/experience/experience';
 import { ContactComponent } from './components/contact/contact';
 import { FooterComponent } from './components/footer/footer';
+import { ThemeService } from './services/theme';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,9 @@ import { FooterComponent } from './components/footer/footer';
   styleUrls: ['./app.css']
 })
 export class App {
+ constructor(private theme: ThemeService) {}
 
-  
+  ngOnInit(): void {
+    this.theme.loadTheme();
+  }
 }

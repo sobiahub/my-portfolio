@@ -1,621 +1,345 @@
 <section
   id="skills"
-  class="bg-black text-white py-24 px-6 lg:px-16"
+  class="relative overflow-hidden bg-white py-24 px-6 text-gray-900 transition-colors duration-300 dark:bg-[#09090B] dark:text-white lg:px-16"
 >
 
-  <div class="max-w-7xl mx-auto">
+  <!-- Background -->
 
+  <div class="absolute inset-0 -z-10">
 
-    <!-- HEADER -->
+    <!-- Grid -->
 
-    <div class="max-w-3xl mb-16">
+    <div
+      class="absolute inset-0 opacity-[0.05] dark:opacity-[0.04]"
+      style="
+      background-image:
+      linear-gradient(to right,#64748b 1px,transparent 1px),
+      linear-gradient(to bottom,#64748b 1px,transparent 1px);
+      background-size:40px 40px;
+      ">
+    </div>
+
+    <!-- Blur -->
+
+    <div
+      class="absolute top-0 left-0 h-72 w-72 rounded-full bg-blue-500/20 blur-[120px]">
+    </div>
+
+    <div
+      class="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-cyan-500/20 blur-[120px]">
+    </div>
+
+  </div>
+
+  <div class="mx-auto max-w-7xl">
+
+    <!-- Header -->
+
+    <div class="mx-auto mb-20 max-w-3xl text-center">
 
       <p
-        class="
-        text-xs
-        uppercase
-        tracking-[0.3em]
-        text-zinc-500">
-
+        class="text-sm uppercase tracking-[5px] text-blue-600 dark:text-blue-400">
         Skills
-
       </p>
 
-
       <h2
-        class="
-        mt-5
-        text-4xl
-        md:text-5xl
-        font-semibold
-        tracking-tight">
+        class="mt-5 text-4xl font-bold md:text-5xl">
 
         Technical
-        <span class="text-zinc-400">
+
+        <span class="text-gray-500 dark:text-zinc-500">
           Skills
         </span>
 
       </h2>
 
-
       <p
-        class="
-        mt-6
-        text-zinc-400
-        leading-7">
+        class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-zinc-400">
 
-        Technologies and tools I use to build
-        responsive, scalable and user-focused
-        web applications.
+        Technologies, frameworks and tools I use to build modern,
+        scalable and responsive web applications.
 
       </p>
 
-
     </div>
 
+    <!-- Skills -->
 
+    <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
+      <!-- Frontend -->
 
+      <div class="skill-card">
 
-    <!-- SKILLS GRID -->
-
-    <div
-      class="
-      grid
-      md:grid-cols-2
-      lg:grid-cols-3
-      gap-8">
-
-
-
-
-
-      <!-- FRONTEND -->
-
-      <div
-        class="
-        rounded-2xl
-        border
-        border-zinc-800
-        bg-zinc-950
-        p-7">
-
-
-        <p
-          class="
-          text-xs
-          uppercase
-          tracking-widest
-          text-zinc-500">
-
+        <p class="skill-title">
           Frontend
-
         </p>
 
-
-        <h3
-          class="
-          mt-5
-          text-xl
-          font-semibold">
-
+        <h3 class="skill-heading">
           Web Development
-
         </h3>
 
-
-        <p
-          class="
-          mt-3
-          text-sm
-          text-zinc-400
-          leading-6">
-
-          Creating responsive layouts and
-          interactive user interfaces with
+        <p class="skill-description">
+          Creating responsive layouts and interactive interfaces with
           modern frontend technologies.
-
         </p>
 
+        <div class="mt-7 flex flex-wrap gap-3">
 
-
-        <div
-          class="
-          mt-6
-          flex
-          flex-wrap
-          gap-3">
-
-
-          <span class="skill">
-            HTML
-          </span>
-
-
-          <span class="skill">
-            CSS
-          </span>
-
-
-          <span class="skill">
-            JavaScript
-          </span>
-
-
-          <span class="skill">
-            TypeScript
-          </span>
-
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">TypeScript</span>
 
         </div>
 
-
       </div>
 
+      <!-- Frameworks -->
 
+      <div class="skill-card">
 
-
-
-
-
-      <!-- FRAMEWORKS -->
-
-      <div
-        class="
-        rounded-2xl
-        border
-        border-zinc-800
-        bg-zinc-950
-        p-7">
-
-
-        <p
-          class="
-          text-xs
-          uppercase
-          tracking-widest
-          text-zinc-500">
-
+        <p class="skill-title">
           Frameworks
-
         </p>
 
-
-        <h3
-          class="
-          mt-5
-          text-xl
-          font-semibold">
-
+        <h3 class="skill-heading">
           Frontend Frameworks
-
         </h3>
 
-
-        <p
-          class="
-          mt-3
-          text-sm
-          text-zinc-400
-          leading-6">
-
-          Building structured applications
-          using component-based architecture.
-
+        <p class="skill-description">
+          Building scalable applications using reusable component architecture.
         </p>
 
+        <div class="mt-7 flex flex-wrap gap-3">
 
-
-
-        <div
-          class="
-          mt-6
-          flex
-          flex-wrap
-          gap-3">
-
-
-          <span class="skill">
-            Angular
-          </span>
-
-
-          <span class="skill">
-            Ionic
-          </span>
-
-
-          <span class="skill">
-            Bootstrap
-          </span>
-
-
-          <span class="skill">
-            Tailwind CSS
-          </span>
-
+          <span class="skill">Angular</span>
+          <span class="skill">Ionic</span>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">Tailwind CSS</span>
 
         </div>
 
-
       </div>
 
+      <!-- Backend -->
 
+      <div class="skill-card">
 
-
-
-
-
-      <!-- BACKEND -->
-
-      <div
-        class="
-        rounded-2xl
-        border
-        border-zinc-800
-        bg-zinc-950
-        p-7">
-
-
-        <p
-          class="
-          text-xs
-          uppercase
-          tracking-widest
-          text-zinc-500">
-
+        <p class="skill-title">
           Backend
-
         </p>
 
-
-
-        <h3
-          class="
-          mt-5
-          text-xl
-          font-semibold">
-
+        <h3 class="skill-heading">
           Server & Database
-
         </h3>
 
-
-
-        <p
-          class="
-          mt-3
-          text-sm
-          text-zinc-400
-          leading-6">
-
-          Developing APIs and connecting
-          applications with backend services.
-
+        <p class="skill-description">
+          Connecting frontend applications with backend services,
+          REST APIs and databases.
         </p>
 
+        <div class="mt-7 flex flex-wrap gap-3">
 
-
-
-        <div
-          class="
-          mt-6
-          flex
-          flex-wrap
-          gap-3">
-
-
-          <span class="skill">
-            Node.js
-          </span>
-
-
-
-
-          <span class="skill">
-            MongoDB
-          </span>
-
-
-          <span class="skill">
-            REST APIs
-          </span>
-
+          <span class="skill">Node.js</span>
+          <span class="skill">MongoDB</span>
+          <span class="skill">REST API</span>
 
         </div>
 
-
       </div>
 
+      <!-- Shopify -->
 
+      <div class="skill-card">
 
-
-
-
-
-
-      <!-- SHOPIFY -->
-
-      <div
-        class="
-        rounded-2xl
-        border
-        border-zinc-800
-        bg-zinc-950
-        p-7">
-
-
-        <p
-          class="
-          text-xs
-          uppercase
-          tracking-widest
-          text-zinc-500">
-
+        <p class="skill-title">
           Ecommerce
-
         </p>
 
-
-
-        <h3
-          class="
-          mt-5
-          text-xl
-          font-semibold">
-
+        <h3 class="skill-heading">
           Shopify Development
-
         </h3>
 
-
-
-        <p
-          class="
-          mt-3
-          text-sm
-          text-zinc-400
-          leading-6">
-
-          Creating and customizing Shopify
-          storefronts for online businesses.
-
+        <p class="skill-description">
+          Developing Shopify stores with custom themes and modern shopping experiences.
         </p>
 
+        <div class="mt-7 flex flex-wrap gap-3">
 
-
-
-        <div
-          class="
-          mt-6
-          flex
-          flex-wrap
-          gap-3">
-
-
-          <span class="skill">
-            Shopify
-          </span>
-
-
-          <span class="skill">
-            Liquid
-          </span>
-
-
-          <span class="skill">
-            Theme Customization
-          </span>
-
+          <span class="skill">Shopify</span>
+          <span class="skill">Liquid</span>
+          <span class="skill">Theme Customization</span>
 
         </div>
 
-
       </div>
 
+      <!-- Tools -->
 
+      <div class="skill-card">
 
-
-
-
-
-
-      <!-- TOOLS -->
-
-      <div
-        class="
-        rounded-2xl
-        border
-        border-zinc-800
-        bg-zinc-950
-        p-7">
-
-
-        <p
-          class="
-          text-xs
-          uppercase
-          tracking-widest
-          text-zinc-500">
-
+        <p class="skill-title">
           Tools
-
         </p>
 
-
-
-        <h3
-          class="
-          mt-5
-          text-xl
-          font-semibold">
-
+        <h3 class="skill-heading">
           Development Workflow
-
         </h3>
 
-
-
-        <p
-          class="
-          mt-3
-          text-sm
-          text-zinc-400
-          leading-6">
-
-          Tools used for development,
-          debugging and version control.
-
+        <p class="skill-description">
+          Professional tools used for coding, testing, collaboration and deployment.
         </p>
 
+        <div class="mt-7 flex flex-wrap gap-3">
 
-
-
-        <div
-          class="
-          mt-6
-          flex
-          flex-wrap
-          gap-3">
-
-
-          <span class="skill">
-            Git
-          </span>
-
-
-          <span class="skill">
-            GitHub
-          </span>
-
-
-          <span class="skill">
-            VS Code
-          </span>
-
-
-          <span class="skill">
-            Postman
-          </span>
-
-
-          <span class="skill">
-            MongoDB Compass
-          </span>
-
+          <span class="skill">Git</span>
+          <span class="skill">GitHub</span>
+          <span class="skill">VS Code</span>
+          <span class="skill">Postman</span>
+          <span class="skill">MongoDB Compass</span>
 
         </div>
 
-
       </div>
 
+      <!-- Additional -->
 
+      <div class="skill-card">
 
-
-
-
-
-
-      <!-- DESIGN -->
-
-      <div
-        class="
-        rounded-2xl
-        border
-        border-zinc-800
-        bg-zinc-950
-        p-7">
-
-
-        <p
-          class="
-          text-xs
-          uppercase
-          tracking-widest
-          text-zinc-500">
-
+        <p class="skill-title">
           Additional
-
         </p>
 
-
-
-        <h3
-          class="
-          mt-5
-          text-xl
-          font-semibold">
-
+        <h3 class="skill-heading">
           Development Practices
-
         </h3>
 
-
-
-        <p
-          class="
-          mt-3
-          text-sm
-          text-zinc-400
-          leading-6">
-
-          Focused on writing clean code and
-          creating responsive user experiences.
-
+        <p class="skill-description">
+          Writing clean, responsive and maintainable code following modern best practices.
         </p>
 
+        <div class="mt-7 flex flex-wrap gap-3">
 
-
-
-        <div
-          class="
-          mt-6
-          flex
-          flex-wrap
-          gap-3">
-
-
-          <span class="skill">
-            Responsive Design
-          </span>
-
-
-          <span class="skill">
-            API Integration
-          </span>
-
-
+          <span class="skill">Responsive Design</span>
+          <span class="skill">API Integration</span>
+          <span class="skill">Performance</span>
 
         </div>
 
-
       </div>
-
-
 
     </div>
-
 
   </div>
 
-
 </section>
 
-
-
 <style>
+
+.skill-card{
+
+@apply
+relative
+overflow-hidden
+rounded-3xl
+border
+border-gray-200/80
+bg-white/80
+backdrop-blur-xl
+p-8
+shadow-lg
+transition-all
+duration-500
+hover:-translate-y-2
+hover:border-blue-500
+hover:shadow-blue-500/20
+hover:shadow-2xl
+dark:border-zinc-800
+dark:bg-zinc-900/60
+dark:backdrop-blur-xl
+dark:hover:border-blue-500;
+
+}
+
+.skill-card::before{
+
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
+transform:scaleX(0);
+transform-origin:left;
+transition:.4s;
+
+}
+
+.skill-card:hover::before{
+
+transform:scaleX(1);
+
+}
+
+.skill-title{
+
+@apply
+text-xs
+font-semibold
+uppercase
+tracking-[4px]
+text-blue-600
+dark:text-blue-400;
+
+}
+
+.skill-heading{
+
+@apply
+mt-5
+text-2xl
+font-bold
+text-gray-900
+dark:text-white;
+
+}
+
+.skill-description{
+
+@apply
+mt-4
+leading-7
+text-gray-600
+dark:text-zinc-400;
+
+}
 
 .skill{
 
 @apply
-px-3
-py-1.5
-rounded-lg
+rounded-full
 border
-border-zinc-800
-bg-zinc-900
+border-gray-300
+bg-gray-100
+px-4
+py-2
 text-sm
-text-zinc-300;
+font-medium
+text-gray-700
+transition-all
+duration-300
+hover:-translate-y-1
+hover:border-blue-500
+hover:bg-blue-600
+hover:text-white
+dark:border-zinc-700
+dark:bg-zinc-800
+dark:text-zinc-300
+dark:hover:border-blue-500
+dark:hover:bg-blue-600
+dark:hover:text-white;
 
 }
 

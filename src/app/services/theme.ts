@@ -1,62 +1,54 @@
 import {
   Injectable,
-  Inject,
-  PLATFORM_ID
+  inject,
+  PLATFORM_ID,
 } from '@angular/core';
-
-import {
-  isPlatformBrowser
-} from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ThemeService {
 
-  isDark = true;
+  private platformId = inject(PLATFORM_ID);
+  private themeKey = 'theme';
 
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: Object
-  ) {
+  private get isBrowser() {
+    return isPlatformBrowser(this.platformId);
+  }
 
-    if (isPlatformBrowser(this.platformId)) {
+  loadTheme() {
 
-      const savedTheme =
-        localStorage.getItem('theme');
+    if (!this.isBrowser) return;
 
-      if (savedTheme) {
-        this.isDark = savedTheme === 'dark';
-      }
+    const savedTheme = localStorage.getItem(this.themeKey);
 
-      this.applyTheme();
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
   }
 
   toggleTheme() {
 
-    if (!isPlatformBrowser(this.platformId))
-      return;
+    if (!this.isBrowser) return;
 
-    this.isDark = !this.isDark;
+    const html = document.documentElement;
+
+    const isDark = html.classList.toggle('dark');
 
     localStorage.setItem(
-      'theme',
-      this.isDark ? 'dark' : 'light'
+      this.themeKey,
+      isDark ? 'dark' : 'light'
     );
-
-    this.applyTheme();
   }
 
-  private applyTheme() {
+  isDarkMode(): boolean {
 
-    if (!isPlatformBrowser(this.platformId))
-      return;
+    if (!this.isBrowser) return false;
 
-    if (this.isDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-
+    return document.documentElement.classList.contains('dark');
   }
+
 }

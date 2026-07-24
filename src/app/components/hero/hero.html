@@ -1,462 +1,428 @@
 <section
   id="home"
-  class="relative min-h-screen bg-[#09090B] text-white overflow-hidden"
+  class="relative min-h-screen overflow-hidden bg-white text-gray-900 transition-colors duration-300 dark:bg-[#09090B] dark:text-white"
 >
 
+  <!-- ========================= -->
   <!-- Background -->
-  <div class="absolute inset-0">
+  <!-- ========================= -->
+
+  <div class="absolute inset-0 overflow-hidden">
+
+    <!-- Grid (Same as before) -->
 
     <div
-      class="absolute inset-0 opacity-[0.025]"
+      class="absolute inset-0 opacity-[0.04] dark:opacity-[0.03]"
       style="
       background-image:
-      linear-gradient(to right,#fff 1px,transparent 1px),
-      linear-gradient(to bottom,#fff 1px,transparent 1px);
+      linear-gradient(to right,currentColor 1px,transparent 1px),
+      linear-gradient(to bottom,currentColor 1px,transparent 1px);
       background-size:80px 80px;">
     </div>
 
+    <!-- Main Blue Glow -->
 
     <div
-      class="
-      absolute
-      top-[-180px]
-      right-[-100px]
-      w-[500px]
-      h-[500px]
+      class="absolute
+      -top-44
+      right-[-170px]
+      h-[720px]
+      w-[720px]
       rounded-full
-      bg-blue-500/[0.05]
-      blur-[140px]">
+      bg-blue-500/20
+      blur-[170px]">
+    </div>
+
+    <!-- Cyan Glow -->
+
+    <div
+      class="absolute
+      top-40
+      left-[-160px]
+      h-[520px]
+      w-[520px]
+      rounded-full
+      bg-cyan-400/15
+      blur-[160px]">
+    </div>
+
+    <!-- Purple Glow -->
+
+    <div
+      class="absolute
+      bottom-[-220px]
+      left-[25%]
+      h-[620px]
+      w-[620px]
+      rounded-full
+      bg-violet-500/15
+      blur-[180px]">
+    </div>
+
+    <!-- Small Accent Glow -->
+
+    <div
+      class="absolute
+      right-1/4
+      top-1/3
+      h-64
+      w-64
+      rounded-full
+      bg-sky-400/15
+      blur-[120px]">
+    </div>
+
+    <!-- Soft White Glow (Light Mode Only) -->
+
+    <div
+      class="absolute
+      left-1/2
+      top-1/2
+      h-[550px]
+      w-[550px]
+      -translate-x-1/2
+      -translate-y-1/2
+      rounded-full
+      bg-white/50
+      blur-[160px]
+      dark:hidden">
     </div>
 
   </div>
 
 
 
-  <div
-    class="
-    relative
-    z-10
-    max-w-7xl
-    mx-auto
-    px-6
-    lg:px-10
-    pt-36
-    pb-24">
+  <!-- ========================= -->
+  <!-- Content -->
+  <!-- ========================= -->
 
+  <div
+    class="relative z-10 mx-auto max-w-7xl px-6 pt-36 pb-24 lg:px-10">
 
     <div
-      class="
-      grid
-      lg:grid-cols-[1fr_380px]
-      gap-16
-      items-center">
+      class="grid items-center gap-16 lg:grid-cols-[1fr_380px]">
 
 
 
 
-
+      <!-- ========================= -->
       <!-- LEFT -->
-
+      <!-- ========================= -->
 
       <div>
 
+        <!-- Badge -->
 
         <div
-          class="
-          inline-flex
-          items-center
-          gap-3
-          rounded-full
-          border
-          border-zinc-800
-          bg-zinc-900/50
-          px-4
-          py-2">
-
+          class="inline-flex items-center gap-3 rounded-full border border-gray-200 bg-white/80 px-4 py-2 shadow-md backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-900/70">
 
           <span
-            class="
-            w-2
-            h-2
-            rounded-full
-            bg-emerald-500">
+            class="h-2.5 w-2.5 animate-pulse rounded-full bg-emerald-500">
           </span>
-
 
           <span
-            class="
-            text-xs
-            uppercase
-            tracking-[0.22em]
-            text-zinc-400">
+            class="text-xs font-medium uppercase tracking-[0.22em] text-gray-600 dark:text-zinc-400">
 
-            Open to frontend roles
+            Open to Frontend Opportunities
 
           </span>
-
 
         </div>
 
 
 
+        <!-- Heading -->
 
         <h1
-          class="
-          mt-10
-          text-5xl
-          sm:text-6xl
-          lg:text-7xl
-          font-semibold
-          tracking-tight
-          leading-[1.05]">
+          class="mt-10 text-5xl font-bold leading-[1.02] tracking-tight text-gray-900 sm:text-6xl lg:text-7xl dark:text-white">
 
+          Sobia
 
-          Sobia Mushtaq
+          <span
+            class="block bg-gradient-to-r from-blue-600 via-cyan-500 to-violet-600 bg-clip-text text-transparent">
 
+            Mushtaq
+
+          </span>
 
         </h1>
 
 
 
-        <h2
-          class="
-          mt-5
-          text-xl
-          sm:text-2xl
-          text-zinc-300
-          font-medium">
+        <!-- Role -->
 
+        <h2
+          class="mt-6 text-xl font-medium text-gray-600 sm:text-2xl dark:text-zinc-300">
 
           Frontend Developer
-
 
         </h2>
 
 
 
-
+        <!-- Description -->
 
         <p
-          class="
-          mt-8
-          max-w-2xl
-          text-lg
-          leading-8
-          text-zinc-400">
+          class="mt-8 max-w-2xl text-lg leading-8 text-gray-600 dark:text-zinc-400">
 
-
-          I build responsive web applications with
-          Angular, TypeScript and modern frontend tools.
-          I focus on writing clean code, creating
-          practical interfaces and delivering smooth
-          user experiences.
-
+          I build responsive web applications using Angular,
+          TypeScript and modern frontend technologies.
+          Passionate about creating clean interfaces,
+          integrating APIs and delivering smooth user
+          experiences through scalable and maintainable code.
 
         </p>
 
 
 
-
-
+        <!-- Buttons -->
 
         <div
-          class="
-          mt-10
-          flex
-          flex-wrap
-          gap-4">
-
+          class="mt-10 flex flex-wrap gap-4">
 
           <a
             href="#projects"
-            class="
-            rounded-lg
-            bg-white
-            text-black
-            px-6
-            py-3
-            font-medium
-            hover:bg-zinc-200
-            transition">
-
+            class="rounded-xl bg-black px-7 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200">
 
             View Projects
 
-
           </a>
 
-
-
-
           <a
-           href="assets/resume/Sobia-Mushtaq-Resume.pdf"
-           target="_blank"
-           download
-            class="
-            rounded-lg
-            border
-            border-zinc-700
-            px-6
-            py-3
-            hover:border-zinc-400
-            transition">
-
+            href="assets/resume/Sobia-Mushtaq-Resume.pdf"
+            target="_blank"
+            download
+            class="rounded-xl border border-gray-300 bg-white/90 px-7 py-3.5 font-medium text-gray-900 shadow-md backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-zinc-700 dark:bg-zinc-900/60 dark:text-white dark:hover:border-zinc-500 dark:hover:bg-zinc-900">
 
             Resume
 
-
           </a>
-
 
         </div>
 
 
 
+        <!-- Tech Stack -->
 
-
-        <div
-          class="mt-14">
-
+        <div class="mt-14">
 
           <p
-            class="
-            text-xs
-            uppercase
-            tracking-[0.25em]
-            text-zinc-500">
+            class="text-xs uppercase tracking-[0.25em] text-gray-500 dark:text-zinc-500">
 
             Tech Stack
 
           </p>
 
-
-
           <div
-            class="
-            mt-5
-            flex
-            flex-wrap
-            gap-3">
+            class="mt-5 flex flex-wrap gap-3">
 
-
-            <span class="tech">
-              Angular
-            </span>
-
-
-            <span class="tech">
-              TypeScript
-            </span>
-
-
-            <span class="tech">
-              JavaScript
-            </span>
-
-
-            <span class="tech">
-              Tailwind CSS
-            </span>
-
-
-            <span class="tech">
-              Node.js
-            </span>
-
-
-            <span class="tech">
-              MongoDB
-            </span>
-
+            <span class="tech">Angular</span>
+            <span class="tech">TypeScript</span>
+            <span class="tech">JavaScript</span>
+            <span class="tech">Tailwind CSS</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">MongoDB</span>
 
           </div>
 
-
         </div>
-
 
       </div>
 
 
 
-
-
-
-
-
+            <!-- ========================= -->
       <!-- RIGHT CARD -->
-
+      <!-- ========================= -->
 
       <div
-        class="
-        border
-        border-zinc-800
-        bg-zinc-950
-        rounded-2xl
-        p-7">
+        class="relative overflow-hidden rounded-3xl border border-gray-200/80 bg-white/80 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-blue-200/40 dark:border-zinc-800 dark:bg-zinc-950/80 dark:shadow-none dark:hover:border-blue-500/40">
 
-
-        <p
-          class="
-          text-xs
-          uppercase
-          tracking-widest
-          text-zinc-500">
-
-          Developer Info
-
-        </p>
-
-
+        <!-- Background Glow -->
 
         <div
-          class="mt-8 space-y-7">
-
-
-          <div>
-
-            <p
-              class="
-              text-sm
-              text-zinc-500">
-
-              Location
-
-            </p>
-
-
-            <p
-              class="
-              mt-1
-              text-zinc-200">
-
-              Bahawalpur, Pakistan
-
-            </p>
-
-          </div>
-
-
-
-
-          <div>
-
-            <p
-              class="
-              text-sm
-              text-zinc-500">
-
-              Experience
-
-            </p>
-
-
-            <p
-              class="
-              mt-1
-              text-zinc-200">
-
-              Frontend Intern
-              <br>
-              Encosoft Technologies
-
-            </p>
-
-          </div>
-
-
-
-
-          <div>
-
-            <p
-              class="
-              text-sm
-              text-zinc-500">
-
-              Currently Learning
-
-            </p>
-
-
-            <p
-              class="
-              mt-1
-              text-zinc-200">
-
-              React.js
-              <br>
-              Backend Integration
-
-            </p>
-
-          </div>
-
-
-
+          class="absolute -right-16 -top-16 h-52 w-52 rounded-full bg-blue-500/10 blur-[90px]">
         </div>
 
-
-
-
-
         <div
-          class="
-          mt-8
-          pt-6
-          border-t
-          border-zinc-800">
+          class="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-violet-500/10 blur-[100px]">
+        </div>
 
+        <div class="relative z-10">
+
+          <!-- Title -->
 
           <p
-            class="
-            text-sm
-            text-zinc-400
-            leading-6">
+            class="text-xs uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400">
 
-
-            Interested in building
-            real-world applications
-            and contributing to
-            meaningful products.
-
+            Developer Info
 
           </p>
 
 
+
+          <div class="mt-8 space-y-8">
+
+            <!-- Location -->
+
+            <div>
+
+              <p
+                class="text-sm text-gray-500 dark:text-zinc-500">
+
+                Location
+
+              </p>
+
+              <p
+                class="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
+
+                Pakistan
+
+              </p>
+
+            </div>
+
+
+
+            <!-- Experience -->
+
+            <div>
+
+              <p
+                class="text-sm text-gray-500 dark:text-zinc-500">
+
+                Experience
+
+              </p>
+
+              <p
+                class="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
+
+                Frontend Intern
+
+              </p>
+
+              <p
+                class="mt-1 text-gray-600 dark:text-zinc-400">
+
+                Encosoft Technologies
+
+              </p>
+
+            </div>
+
+
+
+            <!-- Learning -->
+
+            <div>
+
+              <p
+                class="text-sm text-gray-500 dark:text-zinc-500">
+
+                Currently Learning
+
+              </p>
+
+              <p
+                class="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
+
+                React.js
+
+              </p>
+
+              <p
+                class="mt-1 text-gray-600 dark:text-zinc-400">
+
+                Backend Integration &
+                Performance Optimization
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Divider -->
+
+          <div
+            class="my-8 border-t border-gray-200 dark:border-zinc-800">
+          </div>
+
+
+
+          <!-- Summary -->
+
+          <p
+            class="leading-7 text-gray-600 dark:text-zinc-400">
+
+            Passionate about building scalable,
+            responsive and user-focused web
+            applications with modern frontend
+            technologies and clean architecture.
+
+          </p>
+
+
+
+          <!-- Quick Skills -->
+
+          <div
+            class="mt-8 flex flex-wrap gap-3">
+
+            <span class="tech">Angular</span>
+
+            <span class="tech">TypeScript</span>
+
+            <span class="tech">REST APIs</span>
+
+            <span class="tech">Git</span>
+
+          </div>
+
         </div>
-
-
 
       </div>
 
-
-
-
-
     </div>
-
 
   </div>
 
-
 </section>
-
-
 
 <style>
 
 .tech{
 
 @apply
+rounded-xl
+border
+border-gray-200/80
+bg-white/80
+backdrop-blur-md
 px-4
 py-2
-rounded-lg
-border
-border-zinc-800
-bg-zinc-900/60
 text-sm
-text-zinc-300;
+font-medium
+text-gray-700
+shadow-sm
+transition-all
+duration-300
+hover:-translate-y-1
+hover:border-blue-500
+hover:bg-blue-50
+hover:text-blue-600
+
+dark:border-zinc-800
+dark:bg-zinc-900/70
+dark:text-zinc-300
+dark:shadow-none
+dark:hover:border-blue-500
+dark:hover:bg-blue-500/10
+dark:hover:text-blue-400;
 
 }
 

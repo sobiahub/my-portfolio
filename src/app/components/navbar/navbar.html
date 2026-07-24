@@ -1,5 +1,5 @@
 <nav
-  class="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-[#09090B]/80 backdrop-blur-xl"
+  class="fixed inset-x-0 top-0 z-50 border-b border-gray-200/70 bg-white/80 backdrop-blur-xl transition-colors duration-300 dark:border-white/5 dark:bg-[#09090B]/80"
 >
   <div
     class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10"
@@ -7,19 +7,19 @@
     <!-- Logo -->
     <a
       href="#home"
-      class="text-xl font-bold tracking-tight text-white transition hover:opacity-80"
+      class="text-xl font-bold tracking-tight text-gray-900 transition hover:opacity-80 dark:text-white"
     >
       sobia<span class="text-blue-500">.</span>
     </a>
 
     <!-- Desktop Navigation -->
     <ul
-      class="hidden items-center gap-10 text-sm font-medium text-zinc-400 lg:flex"
+      class="hidden items-center gap-10 text-sm font-medium text-gray-600 lg:flex dark:text-zinc-400"
     >
       <li>
         <a
           href="#about"
-          class="transition duration-200 hover:text-white"
+          class="transition hover:text-blue-600 dark:hover:text-white"
         >
           About
         </a>
@@ -28,7 +28,7 @@
       <li>
         <a
           href="#experience"
-          class="transition duration-200 hover:text-white"
+          class="transition hover:text-blue-600 dark:hover:text-white"
         >
           Experience
         </a>
@@ -37,7 +37,7 @@
       <li>
         <a
           href="#projects"
-          class="transition duration-200 hover:text-white"
+          class="transition hover:text-blue-600 dark:hover:text-white"
         >
           Projects
         </a>
@@ -46,7 +46,7 @@
       <li>
         <a
           href="#contact"
-          class="transition duration-200 hover:text-white"
+          class="transition hover:text-blue-600 dark:hover:text-white"
         >
           Contact
         </a>
@@ -54,21 +54,30 @@
     </ul>
 
     <!-- Right Side -->
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-3">
 
+      <!-- Resume -->
       <a
   href="assets/resume/Sobia-Mushtaq-Resume.pdf"
   target="_blank"
   download
-  class="hidden rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-zinc-200 md:inline-flex"
+  class="hidden rounded-xl bg-black px-5 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-gray-800 md:inline-flex dark:bg-white dark:text-black dark:hover:bg-zinc-200"
 >
   Resume
 </a>
 
-      <!-- Mobile Button -->
+      <!-- Theme Button -->
+      <button
+        (click)="toggleTheme()"
+        class="flex h-11 w-11 items-center justify-center rounded-full border border-gray-300 bg-white text-lg shadow-sm transition-all duration-300 hover:scale-105 hover:bg-gray-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800"
+      >
+        {{ theme.isDarkMode() ? '☀️' : '🌙' }}
+      </button>
+
+      <!-- Mobile Menu Button -->
       <button
         onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
-        class="flex h-10 w-10 items-center justify-center rounded-lg text-zinc-300 transition hover:bg-white/5 lg:hidden"
+        class="flex h-10 w-10 items-center justify-center rounded-lg text-gray-700 transition hover:bg-gray-100 dark:text-zinc-300 dark:hover:bg-white/5 lg:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -92,33 +101,46 @@
   <!-- Mobile Menu -->
   <div
     id="mobileMenu"
-    class="hidden border-t border-white/5 bg-[#09090B] lg:hidden"
+    class="hidden border-t border-gray-200 bg-white transition-colors duration-300 dark:border-white/5 dark:bg-[#09090B] lg:hidden"
   >
     <div class="flex flex-col px-6 py-6">
 
-      <a href="#about" class="py-3 text-zinc-400 hover:text-white">
+      <a
+        href="#about"
+        class="py-3 text-gray-700 transition hover:text-blue-600 dark:text-zinc-400 dark:hover:text-white"
+      >
         About
       </a>
 
-      <a href="#experience" class="py-3 text-zinc-400 hover:text-white">
+      <a
+        href="#experience"
+        class="py-3 text-gray-700 transition hover:text-blue-600 dark:text-zinc-400 dark:hover:text-white"
+      >
         Experience
       </a>
 
-      <a href="#projects" class="py-3 text-zinc-400 hover:text-white">
+      <a
+        href="#projects"
+        class="py-3 text-gray-700 transition hover:text-blue-600 dark:text-zinc-400 dark:hover:text-white"
+      >
         Projects
       </a>
 
-      <a href="#contact" class="py-3 text-zinc-400 hover:text-white">
+      <a
+        href="#contact"
+        class="py-3 text-gray-700 transition hover:text-blue-600 dark:text-zinc-400 dark:hover:text-white"
+      >
         Contact
       </a>
 
-      <a
-        href="assets/resume/Sobia Mushtaq _ Frontend Developer.pdf"
-        target="_blank"
-        class="mt-5 rounded-xl bg-white py-3 text-center font-semibold text-black"
-      >
-        Download Resume
-      </a>
+     <a
+  href="assets/resume/Sobia-Mushtaq-Resume.pdf"
+  target="_blank"
+  download
+  class="mt-5 rounded-xl bg-black py-3 text-center font-semibold text-white transition duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+>
+  Download Resume
+</a>
 
     </div>
   </div>
