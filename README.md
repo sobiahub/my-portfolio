@@ -47,7 +47,7 @@ Showcasing my skills, projects, and professional journey in a clean UI.
 ### 🏠 Hero Section
 ![Hero](./screenshots/hero.PNG)
 ### Light Mode
-![Hero](./screenshots/light mode.PNG)
+![Hero](./screenshots/light-mode.PNG)
 
 ### 👩‍💼 About Section
 ![About](./screenshots/about.PNG)
