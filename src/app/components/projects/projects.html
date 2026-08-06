@@ -36,51 +36,125 @@
 
     <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-      <!-- PROJECT 01 -->
+  <!-- ========================================= -->
+<!-- PROJECT 01 - ECOHOME -->
+<!-- ========================================= -->
 
 <article
   class="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-zinc-800 dark:bg-zinc-950 dark:shadow-none dark:hover:border-zinc-700"
 >
 
+  <!-- ========================= -->
+  <!-- IMAGE SLIDER -->
+  <!-- ========================= -->
+
   <div
-    class="h-56 overflow-hidden border-b border-gray-200 dark:border-zinc-800"
+    class="relative h-56 overflow-hidden border-b border-gray-200 dark:border-zinc-800"
+    (mouseenter)="stopSlider()"
+    (mouseleave)="startSlider()"
   >
 
     <img
-      src="/images/projects/hero.PNG"
+      [src]="ecoHomeImages[currentImage]"
       alt="EcoHome"
-      class="h-full w-full object-cover transition duration-500 hover:scale-105"
+      class="h-full w-full object-cover transition-all duration-500 hover:scale-105"
     />
+
+    <!-- Left Arrow -->
+
+    <button
+      (click)="previousImage()"
+      class="absolute left-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-lg text-white backdrop-blur transition hover:bg-black/70"
+    >
+      &#10094;
+    </button>
+
+    <!-- Right Arrow -->
+
+    <button
+      (click)="nextImage()"
+      class="absolute right-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-lg text-white backdrop-blur transition hover:bg-black/70"
+    >
+      &#10095;
+    </button>
+
+    <!-- Indicators -->
+
+    <div
+      class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2"
+    >
+
+      @for(image of ecoHomeImages; track $index){
+
+      <button
+
+        (click)="currentImage = $index"
+
+        class="h-2 rounded-full transition-all duration-300"
+
+        [class.w-6]="currentImage === $index"
+
+        [class.w-2]="currentImage !== $index"
+
+        [class.bg-white]="currentImage === $index"
+
+        [class.bg-white/40]="currentImage !== $index"
+
+      >
+      </button>
+
+      }
+
+    </div>
 
   </div>
 
+  <!-- ========================= -->
+  <!-- CONTENT -->
+  <!-- ========================= -->
+
   <div class="p-7">
+
+    <!-- Header -->
 
     <div class="flex items-center justify-between">
 
-      <span class="text-sm text-gray-500 dark:text-zinc-500">
+      <span
+        class="text-sm font-medium text-gray-500 dark:text-zinc-500"
+      >
         01
       </span>
 
       <span
-        class="text-xs uppercase tracking-[3px] text-emerald-600 dark:text-emerald-400"
+        class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[2px] text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
       >
         Featured
       </span>
 
     </div>
 
-    <h3 class="mt-6 text-2xl font-semibold">
+    <!-- Title -->
+
+    <h3 class="mt-6 text-2xl font-bold">
+
       EcoHome
+
     </h3>
+
+    <!-- Description -->
 
     <p
       class="mt-4 leading-7 text-gray-600 dark:text-zinc-400"
     >
-      A modern Angular e-commerce platform featuring product search,
-      collections, wishlist, shopping cart, checkout, order management,
-      authentication, and responsive UI with local storage persistence.
+
+      A modern Angular e-commerce platform featuring authentication,
+      product browsing, wishlist, shopping cart, checkout,
+      order management, responsive layouts, and local storage
+      persistence for a seamless shopping experience.
+
     </p>
+
+    <!-- Tech Stack -->
 
     <div class="mt-6 flex flex-wrap gap-2">
 
@@ -96,6 +170,28 @@
 
     </div>
 
+    <!-- Features -->
+
+    <div
+      class="mt-6 grid grid-cols-2 gap-y-2 text-sm text-gray-600 dark:text-zinc-400"
+    >
+
+      <div>✔ Authentication</div>
+
+      <div>✔ Wishlist</div>
+
+      <div>✔ Shopping Cart</div>
+
+      <div>✔ Checkout</div>
+
+      <div>✔ Order Management</div>
+
+      <div>✔ Responsive UI</div>
+
+    </div>
+
+    <!-- Buttons -->
+
     <div class="mt-8 flex gap-3">
 
       <a
@@ -107,7 +203,7 @@
       </a>
 
       <a
-        href="https://github.com/sobiahub/ecohome.git"
+        href="https://github.com/sobiahub/ecohome"
         target="_blank"
         class="btn-secondary"
       >
@@ -119,6 +215,7 @@
   </div>
 
 </article>
+
 
       <!-- PROJECT 02 -->
 
